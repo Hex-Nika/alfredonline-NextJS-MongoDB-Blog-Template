@@ -1,3 +1,4 @@
+"use client";
 import "./globals.css";
 import { Inter } from "next/font/google";
 import { useState } from "react";
@@ -6,10 +7,6 @@ import Nav from "@/components/Nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Alfred Web Dev Blog",
-  description: "The best blog for web development",
-};
 
 export default function RootLayout({ children }) {
   const [posts, setPosts] = useState([]);
